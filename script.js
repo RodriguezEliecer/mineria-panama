@@ -12,21 +12,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const impactos = {
         ambiental: {
-            titulo: "Impacto Ambientales",
+            titulo: "Impacto Ambiental",
             detalle: "El proyecto Cobre Panamá ha generado deforestación en Donoso, Colón, y riesgos de contaminación de ríos por el uso de químicos en la extracción.",
             extra: "El Ministerio de Ambiente supervisa más de 370 compromisos ambientales establecidos en el Estudio de Impacto Ambiental, incluyendo planes de reforestación y monitoreo de calidad de agua.",
             fuente: "https://www.miambiente.gob.pa/mi-ambiente-auditoria-integral-del-proyecto-mina-de-cobre-panama",
             imagen: "./assets/images/ambiental.jpg"
         },
         social: {
-            titulo: "Impacto Sociales",
+            titulo: "Impacto Social",
             detalle: "Las comunidades cercanas a la mina han enfrentado tensiones sociales por reasentamientos, pérdida de tierras agrícolas y cambios culturales.",
             extra: "Aunque existen programas sociales y comunitarios, los beneficios son percibidos como insuficientes frente a los costos sociales y culturales que enfrentan las comunidades.",
             fuente: "https://www.panamaamerica.com.pa/nacion",
             imagen: "./assets/images/social.jpg"
         },
         economico: {
-            titulo: "Impacto Económicos",
+            titulo: "Impacto Económico",
             detalle: "Desde noviembre de 2023 la mina Cobre Panamá permanece inactiva, generando una pérdida estimada de $1,700 millones en 2024.",
             extra: "Las pérdidas incluyen $500 millones en impuestos y regalías, $250 millones en salarios y casi $1,000 millones en compras locales, afectando directamente a proveedores y trabajadores.",
             fuente: "https://www.panamaamerica.com.pa/economia/un-vacio-de-1700-millones-lo-que-pierde-panama-sin-la-mina-de-cobre-1249250",

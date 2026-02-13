@@ -220,14 +220,16 @@
 <!-- Modal -->
 <div class="modal" id="modalImpacto">
   <div class="modal-contenido">
-    <button class="modal-cerrar" id="cerrarModal">&times;</button>
+    <button class="modal-cerrar" id="cerrarModal" aria-label="Cerrar modal">&times;</button>
     <h2 id="impactoTitulo"></h2>
     <div class="modal-img">
       <img id="impactoImagen" src="" alt="Imagen del impacto">
     </div>
     <p id="impactoDetalle"></p>
     <div id="impactoExtra"></div>
-    <a id="impactoFuente" href="#" target="_blank">Ver fuente</a>
+    <div class="modal-footer">
+      <a id="impactoFuente" href="#" target="_blank" class="btn-fuente">Ver fuente</a>
+    </div>
   </div>
 </div>
 
