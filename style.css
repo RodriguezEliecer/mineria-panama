@@ -271,6 +271,7 @@ html {
   font-weight: bold;
   color: #C49A48;        /* mantiene tu color dorado */
   margin: 10px 0;
+  text-align: center;
 }
 
 .subtitulo {
@@ -949,16 +950,30 @@ html {
     transform: scale(1.05);
   }
   
+.contacto-imagen {
+  flex: 1 1 250px;
+  display: flex;
+  justify-content: center;
+}
+
+.contacto-imagen img {
+  max-width: 450px;
+  width: 100%;       /* se adapta al ancho del contenedor */
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
   .contacto-imagen {
-    flex: 1 1 250px;
-    display: flex;
+    flex: 1 1 100%;
     justify-content: center;
   }
-  
+
   .contacto-imagen img {
-    max-width: 450px;
-    height: auto;
-    border-radius: 8px;
-    object-fit: cover;
+    max-width: 100%;  /* ocupa todo el ancho disponible en móvil */
+    border-radius: 6px;
   }
+}
   /* ------------------------------------------- FIN Contacto------------------------------------------------------------------- */
