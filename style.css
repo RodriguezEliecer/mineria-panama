@@ -316,10 +316,16 @@ html {
     flex-direction: column;
     gap: 20px;
     padding: 20px;
+    align-items: center;   /* centra horizontalmente las secciones */
+    text-align: center;    /* centra el texto dentro de cada sección */
   }
 
   .secciones-doble section {
     max-width: 100%;
+  }
+
+  .card-grid {
+    justify-content: center; /* centra las cards dentro de la sección */
   }
 }
 .subtitulo2 {
@@ -474,20 +480,84 @@ html {
   from {opacity: 0; transform: scale(0.95);}
   to {opacity: 1; transform: scale(1);}
 }
-  
+
   /* FIN DE LA CARD ------------------------------------------------------------------- */
-  
-  
-  
+
+
+    /*  -----------------------Resumen Minería-------------------------------------------- */
+.mineria-section {
+  background: #ffffff;
+  border-left: 6px solid #C49A48; /* acento dorado */
+  padding: 60px 20px;
+  margin: 40px 0;
+  color: #333;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  border-radius: 12px;
+}
+
+.mineria-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.mineria-texto {
+  flex: 1 1 500px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.mineria-texto h1 {
+  color: #0c0c28;
+  margin-bottom: 20px;
+}
+
+.mineria-imagen {
+  flex: 1 1 400px;
+  text-align: center;
+}
+
+.mineria-imagen img {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+}
+
+/* Collage opcional */
+.collage {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.collage img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .mineria-container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+    /*  -----------------------Fin Resumen Minería-------------------------------------------- */
+
   /* -------------------------------------------FOOTER------------------------------------------------------------------- */
-  
+
   .footer {
     background-color: #0c0c28;
     color: #fff;
     font-family: Arial, sans-serif;
     padding: 40px 20px 20px;
   }
-  
+
   .footer-top {
     display: flex;
     justify-content: space-between;
