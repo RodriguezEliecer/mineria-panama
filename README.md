@@ -16,3 +16,7 @@ Este sitio web académico presenta un análisis integral sobre la minería en Pa
 
 ### Objetivo
 El proyecto busca fomentar el conocimiento crítico sobre la minería en Panamá, promoviendo la transparencia, la participación ciudadana y la sostenibilidad en el debate nacional.
+
+### Enlace
+
+https://rodriguezeliecer.github.io/mineria-panama/
