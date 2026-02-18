@@ -807,79 +807,105 @@ html {
   /* -------------------------------------------FIN MODAL------------------------------------------------------------------- */
   
   /* -------------------------------------------NOSOTROS------------------------------------------------------------------- */
-  .nosotros-section {
-    padding: 60px 20px;
-    /* background-color: #f8f8f8;  QUITA ESTA LÍNEA */
-    background: linear-gradient(135deg, #0c0c28 0%, #1e2a4a 50%, #314e70 100%);
-    color: #fff;
-    font-family: 'Segoe UI', sans-serif;
-  }
-  
-  
+.nosotros-section {
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #0c0c28 0%, #1e2a4a 50%, #314e70 100%);
+  color: #C49A48;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.nosotros-contenido {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* Bloques principales */
+.bloque-izquierdo {
+  flex: 1 1 35%;
+}
+
+.bloque-derecho {
+  flex: 1 1 60%;
+}
+
+/* Integrantes */
+.integrantes h2 {
+  color: #C49A48;
+  margin-bottom: 15px;
+}
+
+.lista-integrantes {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.lista-integrantes li {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 8px;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  color: #e6e6e6;
+  font-size: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  transition: transform 0.2s ease;
+}
+
+.lista-integrantes li:hover {
+  transform: translateX(5px);
+  color: #C49A48;
+}
+
+/* Información */
+.bloque-derecho h2 {
+  color: #C49A48;
+}
+
+.bloque-derecho p {
+  color: #e6e6e6;
+}
+
+.valores {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.valor {
+  flex: 1 1 45%;
+}
+
+.valor h3 {
+  color: #C49A48;
+}
+
+.valor p {
+  color: #f1f1f1;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
   .nosotros-contenido {
-    max-width: 1300px;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
-  
-  .info-empresa {
-    flex: 1 1 60%;
-  }
-  .info-empresa h2 {
-    color: #C49A48; /* dorado elegante */
-  }
-  
-  .info-empresa p {
-    color: #e6e6e6;
-  }
-  
-  .valores {
-    display: flex;
-    gap: 40px;
-    flex-wrap: wrap;
-  }
-  
-  .valor {
-    flex: 1 1 45%;
-  }
-  
-  .valor h3 {
-    color: #C49A48;
-  }
-  
-  .valor p {
-    color: #f1f1f1;
-  }
-  
-  .info-extra {
-    flex: 1 1 35%;
-    display: flex;
     flex-direction: column;
-    gap: 30px;
     align-items: center;
-  }
-  
-  .logo-empresa img {
-    max-width: 200px;
-    height: auto;
-  }
-  
-  .mapa-ubicacion {
-    background: rgba(255, 255, 255, 0.08);
-    border: 1px solid rgba(255,255,255,0.2);
-    backdrop-filter: blur(6px);
-    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
-  }
-  
-  .mapa-ubicacion h3 {
-    color: #fff;
     text-align: center;
-    color: #C49A48;
   }
+
+  .bloque-izquierdo, .bloque-derecho {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .lista-integrantes li {
+    text-align: center;
+  }
+}
   
   /* ------------------------------------------- FIN NOSOTROS------------------------------------------------------------------- */
   
